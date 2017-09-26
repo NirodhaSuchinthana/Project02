@@ -18,14 +18,14 @@ public class ItemDetails{
 	private String round_lot_size;//not confirmed
 	private double price;
 
-	public ItemDetails(String[] fromFile){
+	public ItemDetails(String[] fromFile,double price){
 		this.symbol = fromFile[0];
 		this.security_name = fromFile[1];
 		this.marcket_category = fromFile[2];
 		this.test_issue = fromFile[3];
 		this.financial_status = fromFile[4];
 		this.round_lot_size = fromFile[5];
-		this.price = Double.parseDouble(fromFile[6]);
+		this.price = price;
 
 	}
 
